@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="relative">
+
+        <!-- SOCIAL MEDIA ICONS -->
+
+        <div class="flex justify-center items-center gap-[16px] bg-[#0E121D] py-[16px] text-white text-xs">
+            <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+
+        <!-- LOGO AND MENU ICON  -->
+
+        <nav class=" flex justify-between items-center px-2 h-[100px]">
+            <img class="w-[160px]" src="/images/real-logo-removebg-preview (1).png" alt="Logo here">
+
+            <button id="menu-btn">
+                <svg class=" bg-yellow-500 text-white w-[50px] h-[50px] rounded-md py-[10px] px-[14px] stroke-[3px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            </button>
+        </nav>
+
+        <!-- DROPDOWN MENU  -->
+
+         <section id="mobile-menu" class="hidden flex flex-col absolute top-0 left-0 w-[260px] border-[3px] border-r-yellow-500">
+            <div class="flex justify-center items-center bg-indigo-50 h-[160px] relative">
+                <img class="h-[50%]" src="/images/real-logo-removebg-preview (1).png" alt="">
+
+                <button class="bg-yellow-500 absolute top-10 right-0 rounded-full  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="5" stroke="currentColor" class="size-8 text-white p-[5px]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+                </button>
+
+
+            </div>
+
+            <ul class="p-[40px] flex flex-col gap-[20px]">
+                <li class="border border-t-black-100">Home</li>
+                <li class="border border-t-black-100">About Us</li>
+                <li class="border border-t-black-100">Services</li>
+                <li class="border border-t-black-100">Projects</li>
+                <li class="border border-t-black-100">Careers</li>
+                <li class="border border-t-black-100">Contact Us</li>
+            </ul>
+         </section>
+    </header>
+
+    <script defer src="script.js"></script>
+
+</body>
+</html>
