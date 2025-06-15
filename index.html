@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script defer src="main.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body class="">
     <header class="relative">
 
         <!-- SOCIAL MEDIA ICONS -->
@@ -31,7 +31,7 @@
         <!-- LOGO AND MENU ICON  -->
 
         <nav class=" flex justify-between items-center px-2 h-[100px]">
-            <img class="w-[160px]" src="/images/real-logo-removebg-preview (1).png" alt="Logo here">
+            <img class="w-[100px]" src="/images/logo.png" alt="Logo here">
 
             <button id="menu-btn">
                 <svg class=" bg-yellow-500 text-white w-[50px] h-[50px] rounded-md py-[10px] px-[14px] stroke-[3px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
@@ -41,32 +41,29 @@
         </nav>
 
         <!-- DROPDOWN MENU  -->
+        
+         <div id="overlay" class="pointer-events-none opacity-0 fixed inset-0 bg-black bg-opacity-50 z-30 transition-opacity duration-500"></div>
 
-         <section id="mobile-menu" class="hidden flex flex-col absolute top-0 left-0 w-[260px] border-[3px] border-r-yellow-500">
-            <div class="flex justify-center items-center bg-indigo-50 h-[160px] relative">
-                <img class="h-[50%]" src="/images/real-logo-removebg-preview (1).png" alt="">
+        <section id="mobile-menu" class=" flex flex-col fixed top-0 left-0 w-[72%] h-full bg-white border-r-[3px] border-r-yellow-500 z-40 transform -translate-x-[110%] transition-all opacity-0 duration-700 ease-in-out">
 
-                <button class="bg-yellow-500 absolute top-10 right-0 rounded-full  ">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="5" stroke="currentColor" class="size-8 text-white p-[5px]">
+            <div class="flex justify-center items-center bg-indigo-50 h-[140px] relative">
+                <img class="h-[50%]" src="/images/logo.png" alt="">
+                <button id="close-menu" class="bg-yellow-500 absolute top-6 -right-4 rounded-full z-10  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"    stroke-width="5" stroke="currentColor" class="size-8 text-white p-[5px]">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
                 </button>
-
-
             </div>
-
-            <ul class="p-[40px] flex flex-col gap-[20px]">
-                <li class="border border-t-black-100">Home</li>
-                <li class="border border-t-black-100">About Us</li>
-                <li class="border border-t-black-100">Services</li>
-                <li class="border border-t-black-100">Projects</li>
-                <li class="border border-t-black-100">Careers</li>
-                <li class="border border-t-black-100">Contact Us</li>
+            
+            <ul class="p-[40px] flex flex-col text-lg">
+                <li class="">Home</li>
+                <li class="border-t border-gray-100 pt-[8px] my-[8px]">About Us</li>
+                <li class="border-t border-gray-100 pt-[8px] my-[8px]">Services</li>
+                <li class="border-t border-gray-100 pt-[8px] my-[8px]">Projects</li>
+                <li class="border-t border-gray-100 pt-[8px] my-[8px]">Careers</li>
+                <li class="border-t border-gray-100 pt-[8px] my-[8px]">Contact Us</li>
             </ul>
-         </section>
+        </section>     
     </header>
-
-    <script defer src="script.js"></script>
-
 </body>
 </html>
